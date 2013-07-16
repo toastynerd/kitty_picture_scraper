@@ -1,0 +1,15 @@
+<h2>Kittens!</h2>
+<div class="column large-6">
+<% @kittens.each do |kitten| %>
+    <% if kitten.id%2 == 0 %>
+    <img src="<%= kitten.link %>">
+  <% end %>
+<% end %>
+</div>
+<div class="column large-6">
+<% @kittens.each do |kitten| %>
+    <% if kitten.id%2 != 0 %>
+    <img src="<%= kitten.link %>">
+  <% end %>
+<% end %>
+</div>
