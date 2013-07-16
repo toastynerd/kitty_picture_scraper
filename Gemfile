@@ -36,10 +36,13 @@ end
 gem 'mechanize'
 
 #background tasks to not lock the site during a scrape
-gem 'delayed_job'
+gem 'sidekiq'
 
 #scheduling to scrape once a day
 gem 'clockwork'
+
+#styling/css framework
+gem 'zurb-foundation'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
