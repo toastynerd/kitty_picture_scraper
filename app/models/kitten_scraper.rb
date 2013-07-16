@@ -6,7 +6,7 @@ class KittenScraper < ActiveRecord::Base
     google_form = page.form('f')
     google_form.q = 'kittens'
     page = agent.submit(google_form)
-    (1..10).each do |number|
+    (1..100).each do |number|
       my_links = page.links
       my_links.each do |link|
         text_link = link.href

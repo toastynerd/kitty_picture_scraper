@@ -39,13 +39,17 @@ gem 'mechanize'
 gem 'delayed_job_active_record', '~> 4.0.0.beta2'
 
 #scheduling to scrape once a day
-gem 'clockwork'
+#gem 'clockwork'
+gem 'whenever', require:false
 
 #styling/css framework
 gem 'zurb-foundation'
 
 #pagination so the site loads
 gem 'kaminari'
+
+#bundling tasks
+gem 'foreman'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
