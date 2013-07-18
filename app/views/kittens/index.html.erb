@@ -1,4 +1,5 @@
 <h2>Kittens!</h2>
+<%= paginate @kittens %></br>
 <div class="column large-6">
 <% @kittens.each do |kitten| %>
     <% if kitten.id%2 == 0 %>
